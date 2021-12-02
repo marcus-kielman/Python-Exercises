@@ -1,0 +1,351 @@
+    1  cat Languages
+    2  cat ls
+    3  cat | ls
+    4  ls
+    5  nano Languages
+    6  cat Languages 
+    7  more Languages 
+    8  less Languages
+    9  nano Languages
+   10  more Languages 
+   11  clear
+   12  head Languages 
+   13  tail Languages 
+   14  mkdir test
+   15  ls
+   16  cp Languages test/
+   17  ls
+   18  ls test
+   19  mkdir Lan
+   20  mv Languages Lan/
+   21  ls
+   22  ls Lan/
+   23  rm Lan/Languages 
+   24  ls
+   25  ls Lan/
+   26  touch Lan/Languages
+   27  ls
+   28  ls Lan
+   29  grep test/Languages C
+   30  grep c test/Languages
+   31  grep -E ^a test/Languages 
+   32  grep -E ^av test/Languages 
+   33  sort test/Languages 
+   34  sort -r test/Languages 
+   35  sort -R test/Languages 
+   36  wc test/Languages 
+   37  wc -l test/Languages 
+   38  wc -w test/Languages 
+   39  wc -m test/Languages 
+   40  cut -c 2-4 test/Languages 
+   41  cut -c 1-4 test/Languages 
+   42  du
+   43  4+8+12+4+8+12+8+4+56
+   44  echo 4+8+12+4+8+12+8+4+56
+   45  $g=4+8+12+4+8+12+8+4+56
+   46  python
+   47  python3
+   48  rm -r Lan/
+   49  ln fil1 test/Languages 
+   50  ln test/Languages file1
+   51  ls
+   52  nano file1
+   53  ln -s test/Languages file2
+   54  ls
+   55  nano file2
+   56  ls
+   57  chown root file2
+   58  sudo chown root file2
+   59  ls
+   60  ls -al
+   61  nano file2
+   62  ls
+   63  chmod -x file2
+   64  sudo chmod -x file2
+   65  ls
+   66  ls -al
+   67  sudo chmod -x file1
+   68  ls -al
+   69  ls -al test
+   70  sudo chmod +x file1
+   71  ls -al test
+   72  man
+   73  clear
+   74  man man
+   75  man cp
+   76  mkdir ITEFolder1 ITEFolder2
+   77  ls
+   78  mkdir ITEFolder3
+   79  cd ITEFolder3
+   80  mkdir ITEFolder4
+   81  s
+   82  ls
+   83  cd ..
+   84  ls
+   85  cd ITEFolder1
+   86  echo This is doc1.txt > doc1.txt
+   87  ls
+   88  echo This is doc2.txt > doc2.txt
+   89  echo This is file1.txt > file1.txt
+   90  echo This is file2.txt > file2.txt
+   91  ls
+   92  ls  -l
+   93  cat doc2.txt 
+   94  mv doc2.txt ~/
+   95  ls
+   96  ls ..
+   97  mv ~/doc2.txt ~/ITEFolder2
+   98  ls ~/ITEFolder2
+   99  cd ../ITEFolder2
+  100  ls
+  101  cp doc2.txt doc2_copy.txt
+  102  ls
+  103  cat doc2_copy.txt 
+  104  mv doc2_copy.txt ~/ITEFolder1
+  105  ls ~/ITEFolder1
+  106  cp doc2.txt ~/ITEFolder1/doc2_new.txt
+  107  ls ~/ITEFolder1/
+  108  cd ~/ITEFolder1
+  109  ls
+  110  mv file*.txt ~/ITEFolder3
+  111  ls
+  112  ls ~/ITEFolder3
+  113  ls
+  114  rm doc2_copy.txt 
+  115  ls
+  116  rm ~/ITEFolder3/ITEFolder4/
+  117  cd ~/ITEFolder3
+  118  ls
+  119  rm -d ITEFolder4/
+  120  ls
+  121  cd ~/
+  122  rm -d ITEFolder3
+  123  rm -r ITEFolder3
+  124  ls
+  125  cd ITEFolder1
+  126  ls
+  127  echo This file contains all the files for file1 >myfile
+  128  echo This file contains all files for file2 > myfile1
+  129  ls
+  130  grep file *
+  131  grep doc *
+  132  grep "some text" *
+  133  grep "the" *
+  134  grep -i th *
+  135  grep -i th *.txt
+  136  ifconfig
+  137  sudo apt install net-tools
+  138  ifconfig
+  139  passwd
+  140  sudo logout
+  141  sudo logoff
+  142  sudo reboot
+  143  passwd
+  144  sudo reboot
+  145  passwd
+  146  sudo poweroff
+  147  nano su
+  148  clear
+  149  ls
+  150  nano check.sh 
+  151  ls
+  152  cd bash_files/
+  153  ls
+  154  nano sum.sh 
+  155  ./sum.sh 
+  156  ./sum.sh 1 2 3 4 5 6 7
+  157  expr 1+2+3+4+5+6+7
+  158  expr 1 + 2 + 3 + 4 + 5 + 6 + 7
+  159  ./sum.sh 15 236 96078
+  160  sudo poweroff
+  161  cd ~/
+  162  ls
+  163  whoami
+  164  man su
+  165  time
+  166  gettime
+  167  getime
+  168  date
+  169  datetime
+  170  time
+  171  changedate
+  172  ls -l
+  173  sudo poweroff
+  174  nano bash_files/sum.sh 
+  175  getent
+  176  clear
+  177  sudo adduser StudentXXX
+  178  sudo adduser marcus2
+  179  su marcus2
+  180  git --version
+  181  sudo apt update
+  182  sudo poweroff
+  183  git --version
+  184  ls
+  185  mkdir 
+  186  mkdir shell_script_repo
+  187  mv bash_files/sum.sh ~/shell_script_repo/
+  188  ls shell_script_repo/
+  189  cd shell_script_repo/
+  190  git init
+  191  git add .
+  192  git commit -m "Shell Scripting Repository: Initial Commit"
+  193  git config --global user.email "marcus.x.kielman@gmail.com"
+  194  git config -- global user.name "marcus-kielman"
+  195  git config --global user.name "marcus-kielman"
+  196  git commit -m "Shell Scripting Repository: Initial Commit"
+  197  sudo reboot
+  198  cd shell_script_repo/
+  199  ls
+  200  git remote add origin https://github.com/marcus-kielman/Shell-Scripting-Repository.git
+  201  git push origin master
+  202  sudo poweroff
+  203  sudo mkdir -p /mnt/cdrom
+  204  sudo mount /dev/cdrom /mnt/cdrom
+  205  cd /mnt/cdrom
+  206  ls
+  207  sudo sh ./VBoxLinuxAdditions.run --nox11
+  208  sudo shutdown -r now
+  209  ip a
+  210  sudo apt install openssh-server
+  211  ifconfig
+  212  sudo poweroff
+  213  ifconfig
+  214  ip a
+  215  sudo ufw allow ssh
+  216  sudo ufw
+  217  ufw
+  218  man ufw
+  219  sudo ufw app list
+  220  sudo ufw log
+  221  sudo ufw status
+  222  sudo ufw enable
+  223  sudo ufw status numbered
+  224  sudo reboot
+  225  ifconfig
+  226  ip a
+  227  sudo nano /etc/network/interfaces
+  228  sudo ifdown
+  229  ip a
+  230  sudo ifdown enp0s8
+  231  sudo poweroff
+  232  ls
+  233  ls -al
+  234  ls .local
+  235  ls .local/share
+  236  ls .local/share/nano
+  237  ls
+  238  ls /mnt
+  239  ls shell_script_repo/
+  240  nano shell_script_repo/sum.sh 
+  241  sudo poweroff
+  242  ip a
+  243  ifconfig
+  244  sudo nano /etc/network/interfaces
+  245  sudo reboot
+  246  ls
+  247  exit
+  248  ls
+  249  exit
+  250  ls
+  251  mkdir devops_files
+  252  ls
+  253  mv Assignment/ ~/devops_files/
+  254  mv bash_files/ ~/devops_files/
+  255  mv * ~/devops_files/
+  256  ls
+  257  mkdir diy_docker
+  258  ls
+  259  cd diy_docker/
+  260  ls
+  261  git clone https://github.com/p8952/bocker.git
+  262  ls
+  263  cd bocker
+  264  ls
+  265  ./bocker 
+  266  ifconfig
+  267  history
+  268  history | grep up
+  269  less history | grep up
+  270  less history
+  271  history | grep less
+  272  history | less
+  273  sudo ifdown enp0s8
+  274  sudo ifup enp0s8
+  275  ifconfig
+  276  sudo reboot
+  277  docker network create maria_db
+  278  sudo apt install docker.io
+  279  docker network create maria_db
+  280  sudo docker network create maria_db
+  281  sudo docker run -p 3306:3306 --name db --network app_name -v data:/data --restart always -e MYSQL_DATABASE=test -e MYSQL_ROOT_PASSWORD=root -d mariadb
+  282  sudo docker run -p 3306:3306 --name db --network maria_db -v data:/data --restart always -e MYSQL_DATABASE=test -e MYSQL_ROOT_PASSWORD=root -d mariadb
+  283  sudo docker container ls -a
+  284  sudo docker container prune
+  285  sudo docker container ls -a
+  286  sudo docker images
+  287  sudo docker run -p 3306:3306 --name db --network maria_db -v data:/data --restart always -e MYSQL_DATABASE=test -e MYSQL_ROOT_PASSWORD=root -d mariadb
+  288  sudo lsof -i:3306
+  289  sudo kill -9 2210
+  290  sudo docker run -p 3306:3306 --name db --network maria_db -v data:/data --restart always -e MYSQL_DATABASE=test -e MYSQL_ROOT_PASSWORD=root -d mariadb
+  291  sudo docker container prune
+  292  sudo docker images
+  293  sudo docker image rm e2278f24ac88 
+  294  sudo docker run -p 3306:3306 --name db --network maria_db -v data:/data --restart always -e MYSQL_DATABASE=test -e MYSQL_ROOT_PASSWORD=root -d mariadb
+  295  sudo docker container prune
+  296  history | grep maria
+  297  sudo apt remove mariadb-server
+  298  sudo lsof -i:330
+  299  sudo lsof -i:3306
+  300  sudo kill -9 22317
+  301  sudo docker container prune
+  302  sudo docker images
+  303  sudo docker image rm e2278f24ac88
+  304  sudo lsof -i:3306
+  305  sudo apt remove mysqld
+  306  sudo apt auto-remove
+  307  sudo lsof -i:3306
+  308  sudo docker run -p 3306:3306 --name db --network maria_db -v data:/data --restart always -e MYSQL_DATABASE=test -e MYSQL_ROOT_PASSWORD=root -d mariadb
+  309  sudo docker ps
+  310  sudo docker network
+  311  sudo docker networks
+  312  sudo docker network ls
+  313  clear
+  314  ls
+  315  cd Python_Exercises/
+  316  ls
+  317  pip
+  318  pip3
+  319  python
+  320  sudo apt-get install python
+  321  python
+  322  pip
+  323  pip3
+  324  sudo apt-get remove python
+  325  sudo apt remove python
+  326  sudo apt install python3 #install Python
+  329  sudo apt install python3-pip #install pip for python
+  364  sudo apt-get install build-essential libssl-dev libffi-dev python-dev #virtualenv dependency
+  366  sudo -H apt-get install -y python3-venv #Install virtual environment (use this instead of pip on ubuntu)
+  385  virtualenv --python python3 pyex_venv
+  387  source pyex_venv/bin/activate
+  390  sudo apt-get install -y libmariadb-dev #mariadb dependency
+  392  pip3 install mariadb
+  396  mariadb -h 127.0.0.1 -u root -p #Lets you access dockerized mariadb (use to add to docker database)
+  
+  422  sudo apt install mariadb-server #install mariadb
+  424  sudo mysql_secure_installation #configure mariadb
+
+  in mariadb
+  source /path/to/.sql/file  #Will add sql table to database
+
+  #Docker commands for mariadb
+  281  sudo apt install docker.io #install docker
+  308  sudo docker run -p 3306:3306 --name db --network maria_db -v data:/data --restart always -e MYSQL_DATABASE=test -e MYSQL_ROOT_PASSWORD=root -d mariadb
+  280  sudo docker network create maria_db
+
+  #Network commands for configuring bridged network on virtualbox
+  244  sudo nano /etc/network/interfaces  #configuration file to put bridged network config in
+  244  sudo ifup [network_name]  #puts network up
+  245  sudo ifdown [network_name] #shuts down network
+  245  ip a #check if network is up (runs like ifconfig)
