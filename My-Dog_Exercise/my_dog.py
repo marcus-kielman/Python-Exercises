@@ -1,9 +1,13 @@
+from datetime import date
+
+today = date.today()
 class MyDog:
-    def __init__(self, breed, name, age, color):
+    def __init__(self, breed, name, age, color, home_address):
         self.breed = breed
         self.name = name
         self.age = age
         self.color = color
+        self.home_address = home_address
         self.isAsleep = False
 
     def walk(self):
@@ -28,10 +32,25 @@ class MyDog:
     
     def info(self):
         print(self.name, self.breed, self.age, self.color)
+    
+    def from_birthyear(self):
+        cls = today.year - self.age
+        return cls
+    
+    def move(self, destination):
+        self.home_address = destination
+        print(f"We moved to {self.home_address}!!")
+
+    @staticmethod
+    def checkup_needed(age):
+        if((age-1)%3==0):
+            return True
+        else:
+            return False
 
 def main():
-    mydogOne = MyDog("german shepard", "Ace", 4, "black")
-    mydogTwo = MyDog("Pitbull", "Luke", 8, "gray")
+    mydogOne = MyDog("german shepard", "Ace", 4, "black", "151 Willmore Road")
+    mydogTwo = MyDog("Pitbull", "Luke", 8, "gray", "142 Parkinson street")
 
     mydogOne.walk()
     mydogOne.sleep()
@@ -44,6 +63,11 @@ def main():
 
     mydogOne.info()
     mydogTwo.info()
+
+    print(f"First Dog address: {mydogOne.home_address}")
+    mydogTwo.move("143 Webster Road")
+    print(mydogOne.checkup_needed(mydogOne.age))
+    print(mydogTwo.checkup_needed(mydogTwo.age))
 
 if __name__=="__main__":
     main()
